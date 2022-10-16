@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm ci # instala dependências de produção sem entradas extras
+        run: npm ci --force # instala dependências de produção sem entradas extras
 
       - name: Build Storybook
         run: npm run build-storybook # roda a build presente em package.json
