@@ -27,7 +27,7 @@ jobs:
       - name: Deploy Storybook
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static # roda o deploy presente em package.json
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} # vars setadas automaticamente/ cria branchs e acessos para o github pages
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} # vars setadas automaticamente/ cria branchs e acessos para o github pages 
 
         # deploy irá olhar sempre para o storybook-static
         # --ci indica que não terá entradas externas nem confirmações
